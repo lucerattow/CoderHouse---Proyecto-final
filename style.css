@@ -181,6 +181,12 @@ button.trans:hover {
     background-size: cover;
 }
 
+.icono-filtros {
+    background-image: url(resources/img/svg/filter_list_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* # Header
 ================================ */
 header {
@@ -365,6 +371,184 @@ main#index .informacion iframe {
     box-shadow: var(--box-shadow-border);
 }
 
+/* # main#buscar
+================================ */
+main#buscar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main#buscar aside {
+    width: calc(25% - 20px);
+}
+
+main#buscar aside {
+    display: inline-block;
+    padding: 10px 0px;
+    vertical-align: top;
+}
+
+main#buscar aside li {
+    display: block;
+}
+
+main#buscar aside li.tags {
+    display: inline-block;
+}
+
+main#buscar aside .filtros {
+    display: block;
+    box-shadow: var(--box-shadow-border);
+    background-color: var(--color-background-header);
+    border-radius: var(--border-radius-grande);
+    justify-content: space-between;
+}
+
+main#buscar aside .filtros .filtros-card {
+    padding: 10px;
+    border-bottom: 1px solid var(--color-background-main);
+}
+
+main#buscar aside .filtros ul,
+main#buscar aside .filtros input[type="text"],
+main#buscar aside .filtros h2 {
+    margin-bottom: 10px;
+}
+
+main#buscar aside .filtros h2{
+    font-size: 26px;
+}
+
+main#buscar aside .filtros input[type="text"],
+main#buscar aside .filtros button {
+    width: 100%;
+}
+
+main#buscar section {
+    display: inline-block;
+    width: 74%;
+    margin-bottom: 10px;
+    text-align: 0;
+}
+
+main#buscar section .Buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main#buscar section .Buscador .filtros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main#buscar section .Buscador .filtros div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main#buscar section .Buscador .filtros div span {
+    margin-right: 10px;
+}
+
+main#buscar section .Buscador .filtros button {
+    border: 1px solid var(--color-input-placeholder-color);
+    margin-left: 10px;
+}
+
+main#buscar section .tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main#buscar section .tarjeta {
+    box-shadow: var(--box-shadow-border);
+    background-color: var(--color-background-header);
+    border: 0px solid black;
+    border-radius: var(--border-radius-grande);
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+
+main#buscar section .tarjeta .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 330px;
+}
+
+main#buscar section .tarjeta img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0px auto;
+}
+
+main#buscar section .tarjeta div.tarjeta-img {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+
+main#buscar section .tarjeta div.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+main#buscar section .tarjeta div.info .valor {
+    font-size: 1.5rem;
+}
+
+main#buscar section .tarjeta div.info .expensas {
+    font-size: 1rem;
+}
+
+main#buscar section .tarjeta div.info ul,
+main#buscar section .tarjeta div.info li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main#buscar section .tarjeta div.info li * {
+    margin: 5px;
+}
+
+main#buscar section .tarjeta div.info .tarjeta-contact {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+main#buscar section .tarjeta div.info .tarjeta-contact button {
+    margin-left: 10px;
+}
+
+main#buscar section .tarjeta div.info .tarjeta-contact button.btn-whatsapp {
+    border-radius: 100%;
+    width: 33px;
+    padding: 0;
+}
+
+/* # main#seguro
+================================ */
+main#seguro .container {
+    position:static;
+    top: 100px;
+    background-color: red;
+}
+
 /* # main#profile
 ================================ */
 main#profile {
@@ -450,165 +634,6 @@ main#profile .container button {
     font-size: 15px;
 }
 
-/* # main#buscar
-================================ */
-main#buscar .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-main#buscar aside {
-    display: inline-block;
-    padding: 10px 0px;
-    vertical-align: top;
-}
-
-main#buscar aside li {
-    display: block;
-}
-
-main#buscar aside li.tags {
-    display: inline-block;
-}
-
-main#buscar aside .filtros {
-    display: block;
-    box-shadow: var(--box-shadow-border);
-    background-color: var(--color-background-header);
-    border-radius: var(--border-radius-grande);
-    justify-content: space-between;
-}
-
-main#buscar aside .filtros .filtros-card {
-    padding: 10px;
-    border-bottom: 1px solid var(--color-background-main);
-}
-
-main#buscar aside .filtros ul,
-main#buscar aside .filtros input[type="text"],
-main#buscar aside .filtros h2 {
-    margin-bottom: 10px;
-}
-
-main#buscar aside .filtros h2{
-    font-size: 26px;
-}
-
-main#buscar aside .filtros input[type="text"] {
-    width: calc(100% - 22px);
-}
-
-main#buscar aside .filtros button {
-    width: 100%;
-}
-
-main#buscar section {
-    display: inline-block;
-    margin-bottom: 10px;
-    text-align: 0;
-}
-
-main#buscar section .Buscador {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-main#buscar section .Buscador div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main#buscar section .Buscador span {
-    margin-right: 10px;
-}
-
-main#buscar section .tarjeta {
-    box-shadow: var(--box-shadow-border);
-    background-color: var(--color-background-header);
-    border: 0px solid black;
-    border-radius: var(--border-radius-grande);
-    display: grid;
-    margin: 10px 0px 10px 0px;
-    overflow: hidden;
-}
-
-main#buscar section .tarjeta img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 0px auto;
-}
-
-main#buscar section .tarjeta div.tarjeta-img {
-    background-color: black;
-    overflow: hidden;
-    text-align: center;
-}
-
-main#buscar section .tarjeta div.info {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-main#buscar section .tarjeta div.info .valor,
-main#buscar section .tarjeta div.info .expensas,
-main#buscar section .tarjeta div.info h2 {
-    white-space: nowrap;
-}
-
-main#buscar section .tarjeta div.info .valor {
-    font-size: 1.5rem;
-}
-
-main#buscar section .tarjeta div.info .expensas {
-    font-size: 1rem;
-}
-
-main#buscar section .tarjeta div.info ul,
-main#buscar section .tarjeta div.info li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-main#buscar section .tarjeta div.info li * {
-    margin: 5px;
-}
-
-main#buscar section .tarjeta div.info .tarjeta-contact {
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-}
-
-main#buscar section .tarjeta div.info .tarjeta-contact button {
-    margin-left: 10px;
-}
-
-main#buscar section .tarjeta div.info .tarjeta-contact button.btn-whatsapp {
-    border-radius: 100%;
-    width: 33px;
-    padding: 0;
-}
-
-/* # main#seguro
-================================ */
-main#seguro .container {
-    position:static;
-    top: 100px;
-    background-color: red;
-}
-
 /* # footer
 ================================ */
 footer {
@@ -664,24 +689,11 @@ footer li a:hover {
     color: rgb(75, 175, 80);
 }
 
-
-/* @media screen and (min-width: 1210px) {
-    main#buscar aside {
-        width: calc(25% - 20px);
-    }
-    main#buscar section {
-        width: 74%;
-    }
-    main#buscar section .tarjeta {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 330px;
-    }
-} */
-
 /* # media query :: general
 ================================ */
 @media screen and (min-width: 1025px) {
     .container {
+        padding: 0px 10px;
         width: 1024px;
     }
 }
@@ -781,8 +793,6 @@ footer li a:hover {
 
 /* # index
 ================================ */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
 @media screen and (max-width: 650px) {
     main#index .tipo-operacion {
         padding-top: 40px;
@@ -831,6 +841,70 @@ footer li a:hover {
 @media screen and (max-width: 375px) {
     main#index .buscador {
         height: 530px;
+    }
+}
+
+/* # buscar
+================================ */
+@media screen and (min-width: 1025px) {
+    main#buscar section .Buscador button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main#buscar aside {
+        display: none;
+    }
+
+    main#buscar section .buscador button {
+        display: block;
+    }
+
+    main#buscar section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main#buscar section .Buscador {
+        flex-direction: column;
+    }
+
+    main#buscar section .Buscador h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main#buscar section .tarjeta {
+        width: calc((100% / 2) - 20px);
+    }
+
+    main#buscar section .tarjeta .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 250px);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main#buscar section .tarjeta {
+        width: 100%;
+    }
+
+    main#buscar section .tarjeta .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 250px);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    main#buscar section .Buscador .filtros {
+        flex-direction: column;
+    }
+
+    main#buscar section .Buscador .filtros button {
+        margin-top: 10px;
     }
 }
 
